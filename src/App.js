@@ -38,12 +38,12 @@ export const App = () => {
   }, [messages, name]);
 
   return (
-    <div style={{ minHeight: "500px", background: "rgba(43, 192, 219, 0.3)" }}>
+    <div style={{ minHeight: "500px", background: "rgba(0, 0, 200, 0.3)" }}>
     <h2>Host App:</h2>
     <h3>{name}</h3>
     <h2>Remote App:</h2>
     <RemoteWrapper>
-      <RemoteApp />
+      <RemoteApp name={"Fanta"}/>
     </RemoteWrapper>
     <br />
     <div>Messages: {messages.map( (t, index) => {
